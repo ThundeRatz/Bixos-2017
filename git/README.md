@@ -61,5 +61,11 @@ Com o comando `git branch -a` podemos ver todos os branches, locais ou remotos, 
 
 ## Resolvendo conflitos de merge
 
+Quando você tenta dar um merge em dois branches ou dar pull nas mudanças remotas do seu repositório, o git tenta misturar as duas versões do arquivo. No entanto, se tiver alterações na mesma parte do programa nos dois arquivos, o auto-merge vai falhar, e você vai ter que resolver os problemas manualmente. O git vai te avisar quais os arquivos problemáticos, e em cada um deles vai criar uma estrutura assim:
+
+![Merge conflict](https://image.ibb.co/eiCEtv/Capturar.png "Merge Conflict")
+
+A parte de cima é a que está no seu arquivo original, e a parte de baixo é a que estava no outro arquivo, seja o de um outro branch ou o que veio de um repositório remoto depois de um pull. Para resolver, você tem que escolher a versão que você quer, ou uma mistura das duas. Então, você precisa remover os marcadores do conflito(`<<<<<<<`, `=======` e `>>>>>>>`). Depois de fazer isso em todos os conflitos, você precisa usar o `git add` e o `git commit` para criar um commit com essas mudanças, e 
+o conflito está resolvido.
 
 [aula_git]: https://try.github.io/levels/1/challenges/1
