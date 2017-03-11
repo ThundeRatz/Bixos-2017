@@ -12,6 +12,8 @@ Olá bixos! Esse é o repositório com o que vocês precisarão aprender para es
 
 É importante que já vejam a parte dos tutorias de C logo. Apesar de alguns de vocês já terem C em MAC2166, algumas coisas que vocês ainda não viram serão necessárias.
 
+[TODO]Definir as aulinhas e as datas
+
 O planejamento atual das aulas é esse:
 * Linux/Linha de Comando - 15/03 (Já tenham Linux instalado)
 * Git - 17/03 (Já tenham uma conta no GitHub)
