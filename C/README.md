@@ -3,6 +3,7 @@
 Primeiramente, é importante que já saibam o básico de C, recomendo o seguinte:
 * [Learn-C][learnc] - Um tutorial interativo de C, em inglês (Até a parte de Structures);
 * [Material de MAC2166][mac2166] - Apostila de MAC2166 (Introdução à Computação de vocês) sobre C.
+
 [//]: # (Adicionar mais coisas aqui?)
 Além disso, existe o maravilhoso Google =P
 
@@ -22,7 +23,7 @@ terminal e também é bastante customizável, mas podem usar o Code::Blocks se p
 Como já deve~~ria~~m saber, essa é a estrutura básica de um programa em C:
 ```c
 #include <stdio.h>       // Isso é um header
-// Outros includes
+// Outros includes0
 #define Constante 1
 // Outras diretivas de compilador
 

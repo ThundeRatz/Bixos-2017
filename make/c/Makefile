@@ -2,6 +2,9 @@
 
 all: hello
 
+%.o: %.c
+	gcc -o $@ -c $^
+
 clean:
 	rm -f *.o hello
 
