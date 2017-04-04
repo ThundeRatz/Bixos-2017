@@ -11,8 +11,8 @@ Olá bixos! Esse é o repositório com o que vocês precisarão aprender para es
 É importante que já vejam a parte dos tutorias de C logo. Apesar de alguns de vocês já terem C em MAC2166, algumas coisas que vocês ainda não viram serão necessárias.
 
 O planejamento atual das aulas é esse:
-* Git - 04/04 (Já tenham uma conta no GitHub)
-* C - 07/04 (Tem uns links no repositório, que quem não sabe nada de C pode ir dando uma olhada, porque é impossível ensinar tudo de C em uma aula, são só algumas coisas a mais)
-* Make - 14/04
+* Git - 04/04 - 17h00 (Já tenham uma conta no GitHub)
+* C - 07/04 - 17h00 (Tem uns links no repositório, que quem não sabe nada de C pode ir dando uma olhada, porque é impossível ensinar tudo de C em uma aula, são só algumas coisas a mais)
+* Make - 14/04 - 17h00
 
 Mais detalhes sobre a segunda parte do PS serão dados depois.
