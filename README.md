@@ -12,7 +12,7 @@ Olá bixos! Esse é o repositório com o que vocês precisarão aprender para es
 
 O planejamento atual das aulas é esse:
 * Git - 04/04 - 17h00 (Já tenham uma conta no GitHub)
-* C - 07/04 - 17h00 (Tem uns links no repositório, que quem não sabe nada de C pode ir dando uma olhada, porque é impossível ensinar tudo de C em uma aula, são só algumas coisas a mais)
+* C - 06/04 - 17h00 (Tem uns links no repositório, que quem não sabe nada de C pode ir dando uma olhada, porque é impossível ensinar tudo de C em uma aula, são só algumas coisas a mais)
 * Make - 14/04 - 17h00
 
 Mais detalhes sobre a segunda parte do PS serão dados depois.
