@@ -1,5 +1,7 @@
 # Git e GitHub
 
+Eu estou na aula.
+
 Hoje em dia, em geral, ninguém programa sozinho. O git é uma ferramenta criada para facilitar na colaboração distribuição de códigos. O git pode ser usado em servidores privados, mas no geral, os códigos são enviados para o GitHub, um site que hospeda os códigos e que também tem uma interface gráfica simples, que facilita a visualização de mudanças feitas por outras pessoas.
 
 O git é meio chato de começar a usar, mas com a prática vai ficando muito mais fácil. Existem na internet [aulas interativas][aula_git], que ajudam a aprender passo a passo como usar o programa.
