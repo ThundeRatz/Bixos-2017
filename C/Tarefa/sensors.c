@@ -20,7 +20,7 @@ uint16_t get_sensor(sensor_t sensor) {
 
 	ADCSRA |= (1 << ADSC);
 
-	while(ADCSRA & (1 << ADSC));
+	while (ADCSRA & (1 << ADSC));
 
 	return ADC;
 }
