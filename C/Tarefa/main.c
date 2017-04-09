@@ -26,8 +26,8 @@ int main() {
 	wdt_disable();
 
 	for (;;) {
-		if(get_sensor(FE) < THRESHOLD_FE || get_sensor(FD) < THRESHOLD_FD){ //se tiver oponente na frente (Threshold em CM)
-			while(get_sensor(LE) > THRESHOLD_LE || get_sensor(LD) > THRESHOLD_LD){   //vai pra frente até a borda do dojo (branco é leitura pequena)
+		if(get_sensor(SENSOR_FE) < THRESHOLD_FE || get_sensor(SENSOR_FD) < THRESHOLD_FD){ //se tiver oponente na frente (Threshold em CM)
+			while(get_sensor(SENSOR_LE) > THRESHOLD_LE || get_sensor(SENSOR_LD) > THRESHOLD_LD){   //vai pra frente até a borda do dojo (branco é leitura pequena)
 				motors(150, 150);
 			}
 			motors(-255, -255);   //chegou até a borda do dojo. Dar um pouco de ré e repetir a rotina
