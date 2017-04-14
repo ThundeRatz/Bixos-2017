@@ -43,7 +43,7 @@ int main() {
 			motors(255,-255);
 		}
 		else {
-			dif = map (fe-fd,-300,300,-70,70);
+			dif = map (fe-fd,-1023,1023,-70,70);
 			motors(200-dif,200+dif);
 
 		}
