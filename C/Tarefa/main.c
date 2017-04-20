@@ -20,40 +20,36 @@ int main() {
     wdt_reset();
     wdt_disable();
 
-// -255, 255
     for (;;) {
         int sensorlatd = get_sensor(SENSOR_LD);
         int sensorlate = get_sensor(SENSOR_LE);
         int sensorfrd = get_sensor(SENSOR_FD);
         int sensorfre = get_sensor(SENSOR_LD);
         if (sensorlatd < sensorfrd) && (sensorlate < sensorfre) {
-			//quando o objeto está quase alinhado a frente
+		//quando o objeto está quase alinhado a frente
             if (sensorfrd<650) && (sensorfre<650){
-				if (sensorfre=sensorfrd)
-                    motors(255, 255)
+		if (sensorfre==sensorfrd)
+			motors(255, 255);
                 else if(sensorfre<sensorfrd)
-					motors(255, 100);
-			    else
-					motors(100, 255);
-			}
-			else if (sensorfrd<850) && (sensorfre<850){
-                if (sensorfre=sensorfrd)
-                    motors(255, 255)
+			motors(255, 100);
+		else
+			motors(100, 255);
+	}
+	else if (sensorfrd<850) && (sensorfre<850){
+                if (sensorfre==sensorfrd)
+                	motors(255, 255);
                 else if(sensorfre<sensorfrd)
-					motors(255, 200);
-				else
-					motors(200, 255);
-            }
-
-			else
+			motors(255, 200);
+		else
+			motors(200, 255);
+	}	
+	else 
                 motors(255, 255);
-            }
-        else if (sensorlate>sensorlatd){ // mais esquerda
-			motors(255, -255)
-        else{ //mais direita
-			motors(-255, 255)
-        }
-         _delay_ms(10);
+        }   
+        else if (sensorlate>sensorlatd) // mais esquerda
+			motors(-255, 255);
+        else //mais direita 
+			motors(255, -255);   
     }
 
     return 0;
