@@ -15,4 +15,4 @@ O planejamento atual das aulas é esse:
 * C - 06/04 - 17h00 (Tem uns links no repositório, que quem não sabe nada de C pode ir dando uma olhada, porque é impossível ensinar tudo de C em uma aula, são só algumas coisas a mais)
 * Make - 12/04 - 14h00
 
-Mais detalhes sobre a segunda parte do PS serão dados depois.
+Mais detalhes sobre a segunda parte do PS estão nos README da pasta do Projeto Final.

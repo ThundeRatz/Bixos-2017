@@ -41,14 +41,14 @@ ASM_TARGETS = $(patsubst %.asm,%,$(wildcard *.asm))
 all: main.hex
 
 %.o: %$(EXT)
-	@echo "Compilando "$<
-	@$(COMPILE) -c $< -o $@
-	@echo "Ok."
+#	@echo "Compilando "$<
+	$(COMPILE) -c $< -o $@
+#	@echo "Ok."
 
 load:
-	@echo "Gravando..."
-	@$(AVRDUDE) -U flash:w:main.hex:i
-	@make size
+#	@echo "Gravando..."
+	$(AVRDUDE) -U flash:w:main.hex:i
+	make size
 
 asm:
 	@echo "Compilando assembly"
@@ -109,10 +109,10 @@ copy_eeprom:
 copy: copy_eeprom copy_flash copy_fuses
 
 clean:
-	@echo "Removendo arquivos..."
-	@rm -f main.hex main.elf $(OBJECTS)
-	@rm -rf read/
-	@echo "Arquivos removidos com sucesso!"
+#	@echo "Removendo arquivos..."
+	rm -f main.hex main.elf $(OBJECTS)
+	rm -rf read/
+#	@echo "Arquivos removidos com sucesso!"
 
 help:
 	@echo "----------------------- ThunderMakefile -----------------------"
@@ -148,9 +148,9 @@ help:
 
 # file targets:
 main.elf: $(OBJECTS)
-	@echo "Compilando main.elf para "$(MCU)", mude o Makefile se necessario."
-	@$(COMPILE) -o main.elf $(OBJECTS)
+#	@echo "Compilando main.elf para "$(MCU)", mude o Makefile se necessario."
+	$(COMPILE) -o main.elf $(OBJECTS)
 
 main.hex: main.elf
-	@rm -f main.hex
-	@avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+	rm -f main.hex
+	avr-objcopy -j .text -j .data -O ihex main.elf main.hex

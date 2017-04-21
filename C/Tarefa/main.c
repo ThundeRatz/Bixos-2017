@@ -21,6 +21,10 @@ int main() {
 	wdt_disable();
 
 	for (;;) {
+		if (get_sensor(SENSOR_FD) < 500)
+			motors(255, 255);
+		else
+			motors(-100, -100);
 
 		_delay_ms(10);
 	}
