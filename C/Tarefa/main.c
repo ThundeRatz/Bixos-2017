@@ -13,6 +13,8 @@
 #include "sensors.h"
 #include "motors.h"
 
+
+
 int main() {
 	sensors_init();
 	motors_init();
@@ -20,10 +22,30 @@ int main() {
 	wdt_reset();
 	wdt_disable();
 
-	for (;;) {
+	int sensorFE = get_sensor(SENSOR_FE);
+	int sensorFD = get_sensor(SENSOR_FD);
+	int sensorLE = get_sensor(SENSOR_LE);
+	int sensorLD = get_sensor(SENSOR_LD);
 
-		_delay_ms(10);
+	for (;;){
+		if (sensorFE > 0 || sensorFD > 0) {
+			motors(255,255);
+			if (sensorFE > sensorFD)
+				motors(180,255);
+			if (sensorFD > sensorFE)
+				motors(255,180);				
+		}
+		else if (sensorLE > 0)
+			motors(0,255);
+		else if (sensorLD > 0)
+			motors(255,0);
+		else
+			motors(255,-255);		
 	}
+
+
+	_delay_ms(10);
+
 
 	return 0;
 }
