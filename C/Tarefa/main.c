@@ -13,7 +13,8 @@
 #include "sensors.h"
 #include "motors.h"
 
-
+#define SensorMIN 400
+#define SensorMIN2 600
 
 int main() {
 	sensors_init();
@@ -28,16 +29,16 @@ int main() {
 	int sensorLD = get_sensor(SENSOR_LD);
 
 	for (;;){
-		if (sensorFE > 0 || sensorFD > 0) {
+		if (sensorFE > SensorMIN || sensorFD > SensorMIN) {
 			motors(255,255);
-			if (sensorFE > sensorFD)
+			if (sensorFE > sensorFD && sensorFE > SensorMIN2)
 				motors(180,255);
-			if (sensorFD > sensorFE)
+			if (sensorFD > sensorFE && sensorFD > SensorMIN2)
 				motors(255,180);				
 		}
-		else if (sensorLE > 0)
+		else if (sensorLE > SensorMIN)
 			motors(0,255);
-		else if (sensorLD > 0)
+		else if (sensorLD > SensorMIN)
 			motors(255,0);
 		else
 			motors(255,-255);		
