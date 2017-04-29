@@ -38,4 +38,4 @@ uint32_t get_tick();
 ```
 Assumam que essas funções funcionam e estão implementadas, vocês podem fazer alterações em todos arquivos(e criar novos), da forma que preferirem. Podem usar o controle que preferirem, os dados de sensores que acharem necessário.
 
-[follow]: https://thumb.ibb.co/gNrSBQ/Untitled_3.jpg "Sensores Follow"
+[follow]: http://thunderatz.org/media/ps2017/Follow.jpeg "Sensores Follow"
