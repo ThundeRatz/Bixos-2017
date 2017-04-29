@@ -1,10 +1,3 @@
-/**
- * Processo Seletivo 2017 - sensors.c
- *
- * Equipe ThundeRatz de Robótica
- * 03/2017
- */
-
 #include "sensors.h"
 
 uint16_t getLineSensor(uint16_t sensor){
