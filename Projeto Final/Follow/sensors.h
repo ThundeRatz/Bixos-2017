@@ -1,10 +1,3 @@
-/**
- * Processo Seletivo 2017 - sensors.h
- *
- * Equipe ThundeRatz de Robótica
- * 03/2017
- */
-
 #pragma once
 
 typedef enum {
