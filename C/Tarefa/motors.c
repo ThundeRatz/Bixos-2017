@@ -27,5 +27,19 @@ void motors_init() {
 }
 
 void motors(int16_t velE, int16_t velD) {
+	if (velE < 0){
+		MOTET = -velE;
+		MOTEF = 0;
+	} else {
+		MOTET = 0;
+		MOTEF = velE;
+	}
 
+	if (velD < 0){
+		MOTDT = -velD;
+		MOTDF = 0;
+	} else {
+		MOTDT = 0;
+		MOTDF = velD;
+	}
 }

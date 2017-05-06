@@ -10,7 +10,7 @@
 typedef enum {
 	SENSOR_LE = 0,
 	SENSOR_FE,
-	SENSOR_FD,
+	SENSOR_FD = 6,
 	SENSOR_LD
 } sensor_t;
 
